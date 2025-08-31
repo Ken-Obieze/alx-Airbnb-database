@@ -1,11 +1,11 @@
-# 🏡 ALX Airbnb Database Project
+# LX Airbnb Database Project
 
 This repository contains the **database design and implementation** of an Airbnb-like system.  
 The project is structured into multiple tasks that gradually build a robust, normalized database system, preparing learners to tackle **real-world database challenges**.  
 
 ---
 
-## 🎯 Objectives
+## Objectives
 - Design a well-structured relational database for an Airbnb-like application.  
 - Apply **ER modeling** and **normalization principles** to ensure data integrity.  
 - Create SQL scripts for schema definition, constraints, and indexes.  
@@ -13,7 +13,7 @@ The project is structured into multiple tasks that gradually build a robust, nor
 
 ---
 
-## 📌 Key Highlights
+## Key Highlights
 - **Task 1:** Craft a detailed **Entity-Relationship Diagram (ERD)** to visualize the database design, ensuring clear relationships and properly defined entities.  
 - **Task 2:** Apply **normalization principles** to refine the database design, optimizing data integrity and minimizing redundancy.  
 - **Task 3:** Create SQL scripts to **define the schema**, incorporating primary keys, foreign keys, and indexes for optimal query performance.  
@@ -23,27 +23,7 @@ Each task builds on the previous one, providing a **step-by-step learning journe
 
 ---
 
-## 📂 Repository Structure
-alx-airbnb-database/
-│
-├── database-script-0x01/ # SQL schema definition (CREATE TABLE scripts)
-│ ├── schema.sql
-│ └── README.md
-│
-├── database-script-0x02/ # Sample data (INSERT scripts)
-│ ├── seed.sql
-│ └── README.md
-│
-├── erd/ # ER diagrams (Task 1 & Task 2)
-│ ├── airbnb_erd.png
-│ └── normalization_notes.md
-│
-└── README.md # Project overview (this file)
-
-
----
-
-## 🚀 Getting Started
+## Getting Started
 
 ### 1️Clone the repository
 ```bash
