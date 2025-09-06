@@ -2,6 +2,8 @@
 
 This document describes the **indexes created** for the `users`, `bookings`, and `properties` tables to optimize query performance. It also includes performance analysis using `EXPLAIN` before and after adding indexes.
 
+The SQL commands for creating indexes and measuring performance are available in database_index.sql.
+
 ---
 
 ## Identifying High-Usage Columns
