@@ -1,4 +1,4 @@
-# LX Airbnb Database Project
+# ALX Airbnb Database Project
 
 This repository contains the **database design and implementation** of an Airbnb-like system.  
 The project is structured into multiple tasks that gradually build a robust, normalized database system, preparing learners to tackle **real-world database challenges**.  
