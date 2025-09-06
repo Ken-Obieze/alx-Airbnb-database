@@ -28,9 +28,9 @@ FROM bookings b
 JOIN users u ON b.user_id = u.id
 JOIN properties p ON b.property_id = p.id
 JOIN payments pay ON b.id = pay.booking_id;
--- This query works but can be slow with large datasets (full table scans, unnecessary columns).
-
-
+WHERE b.status = 'confirmed'
+  AND pay.status = 'completed'
+ORDER BY b.start_date DESC;
 
 -- ======================================
 -- Refactored Query (Optimized)
@@ -41,6 +41,7 @@ JOIN payments pay ON b.id = pay.booking_id;
 -- 3. Reordered joins to reduce nested loops
 -- 4. Avoided redundant scans
 
+EXPLAIN ANALYZE
 SELECT 
     b.id AS booking_id,
     b.check_in_date,
@@ -54,4 +55,6 @@ FROM bookings b
 INNER JOIN users u ON b.user_id = u.id
 INNER JOIN properties p ON b.property_id = p.id
 LEFT JOIN payments pay ON b.id = pay.booking_id;
--- LEFT JOIN for payments ensures bookings without payments still appear.
+WHERE b.status = 'confirmed'
+  AND pay.status = 'completed'
+ORDER BY b.start_date DESC;
